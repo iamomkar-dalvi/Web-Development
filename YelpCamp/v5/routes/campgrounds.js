@@ -41,7 +41,7 @@ router.get("/:id",function(req,res){
 //Add new Campground to database
 router.post("/",function(req,res){
 	var name = req.body.campName;
-	var iurl = req.body.campImg;e 
+	var iurl = req.body.campImg;
 	var desc = req.body.campDesc;
 	var newCampground = {name:name , image:iurl , description:desc};
 	Campground.create(newCampground,function(err,campground){
